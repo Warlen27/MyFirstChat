@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/37e064d5ca.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+
+    
+</head>
+<body>
+  
+       <p id="nick-error" ></p>       
+     <div class="card col-md-4 mt-5 mx-auto" id="nick-wrap"> 
+         <div class="card-header">
+             <h3>Entre com seu nome:</h3>
+         </div>
+         <div class="card-body">
+             <form id="nick-form">
+                <input type="text"  id="author" class="form-control">
+                
+                <button type="submit" class="btn  btn-block mt-2" style=" color:#fff;background-color: #563d7c">
+                        <i class="fas fa-location-arrow"></i> Enviar
+                </button>
+             </form>
+         </div>
+
+     </div> 
+         
+
+
+ <section id="content-wrap">
+    <section class="container1 " > 
+
+        <header >
+                
+                 <button  id="btn-close-chat"><i class="fas fa-arrow-circle-left"></i></button>
+                 <div id="feedback"></div>
+                 <h1>Chat</h1>
+                
+        </header>
+
+         <aside id="aside">
+             <form id="photo">
+               <div class="container2 " id="user-border" >
+                    <img src="img/avatar5.png" class="userChat online" id="preview"/>  
+                     <p class="name-user" id="my-name-user"></p>      
+                    
+                     <div class="sub-container">
+                         
+                      <input type="file" name="imagem" id="image" class="inputfile"  />
+                      <label for = "fileInput" id="img"><img src="img/img28.png" class="camera" /></label>
+                     </div>
+                     
+                          
+             </div>
+             <button type="submit" id="btn-photo">Salvar</button> 
+            <div class="mais-vinte"><hr></div>
+
+            <div id="usernames"></div> 
+       <div class="init-chat"><button  id="btn-chat"><i class="fas fa-comment-alt"></i>Start Chat</button> </div>
+           
+        </form>
+       
+                           
+        </aside>  
+           
+        <main id="main">            
+                                
+           
+          
+                
+              <div id="left" class="cmenssages">
+                
+        
+              </div>
+             <div id="right" class="cmenssages"></div>
+             
+            
+          
+    </main>
+      <footer id="footer">
+          <div class="separa"></div>
+         
+            <form id="chat" >  
+               
+                    <input type="text" placeholder="Digite aqui... " class="input" id="menssage" />
+                                        
+                <button type="submit" class="send"><i class="fa fa-paper-plane"  ></i></button>
+                
+            </form>
+        
+        </footer>
+    
+
+ </section>
+</section>
+    
+    
+ 
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/socket.io/socket.io.js"></script> <!--Vem primeiro-->
+<script src="/js/main.js"></script>
+
+</html>
